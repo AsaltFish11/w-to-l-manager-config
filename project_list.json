@@ -137,7 +137,8 @@
             "uninstall-commands": [
                 {
                     "permission": "root",
-                    "command": "make uninstall"
+                    "command": "make uninstall",
+                    "ignore-error": true
                 }
             ],
             "button-1": {
@@ -190,7 +191,8 @@
             "uninstall-commands": [
                 {
                     "permission": "normal",
-                    "command": "systemctl --user disable --now activate-linux.service || true"
+                    "command": "systemctl --user disable --now activate-linux.service",
+                    "ignore-error": true
                 },
                 {
                     "permission": "normal",
