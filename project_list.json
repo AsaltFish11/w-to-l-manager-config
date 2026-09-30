@@ -29,7 +29,17 @@
                     "permission": "root",
                     "command": "rm -f /usr/local/bin/cmd.exe /usr/local/bin/COMMAND.COM /usr/local/bin/cmd"
                 }
-            ]
+            ],
+            "button-1": {
+                "name": "运行",
+                "describe": "打开一个新的cmd",
+                "commands": [
+                    {
+                        "permission": "normal",
+                        "command": "cmd"
+                    }
+                ]
+            }
         },
         {
             "id": "Explorer-for-Linux",
@@ -73,7 +83,28 @@
                     "permission": "normal",
                     "command": "rm -f ~/.config/autostart/explorer-linux.desktop"
                 }
-            ]
+            ],
+            "button-1": {
+                "name": "运行",
+                "describe": "打开一个新的资源管理器",
+                "commands": [
+                    {
+                        "permission": "normal",
+                        "command": "explorer.exe"
+                    }
+                ]
+            },
+            "button-2": {
+                "name": "终止",
+                "describe": "调用项目作者给出的强制终止指令",
+                "commands": [
+                    {
+                        "permission": "normal",
+                        "command": "explorer-killall --session"
+                    }
+                ]
+            },
+            "tips": "此项目提供更多进阶功能，具体请前往github查看，此处只安装最基础版本\n作者给出的逃生通道：\nShift+F10 - 强制清场（黑/白屏与正常状态均生效）\n 会话终结门控:export EXPLORER_SESSION_KILL=1 后 explorer-killall --session"
         },
         {
             "id": "activate-linux",
@@ -103,7 +134,27 @@
                     "permission": "root",
                     "command": "make uninstall"
                 }
-            ]
+            ],
+            "button-1": {
+                "name": "启动",
+                "describe": "启动水印",
+                "commands": [
+                    {
+                        "permission": "normal",
+                        "command": "activate-linux"
+                    }
+                ]
+            },
+            "button-2": {
+                "name": "关闭",
+                "describe": "终止水印进程",
+                "commands": [
+                    {
+                        "permission": "normal",
+                        "command": "pkill -f activate-linux"
+                    }
+                ]
+            }
         }
     ]
 }
