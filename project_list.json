@@ -80,9 +80,9 @@
             "author": "MrGlockenspiel",
             "describe": "将激活Windows水印移植到linux的一个项目",
             "github-url": "https://github.com/MrGlockenspiel/activate-linux",
-            "platform": {
+            "platform": [
                 "all-linux"
-            },
+            ],
             "clone-command": "git clone --depth=1 https://github.com/MrGlockenspiel/activate-linux.git",
             "dependency": [
                 "gcc",
