@@ -33,6 +33,7 @@
             "button-1": {
                 "name": "运行",
                 "describe": "打开一个新的cmd",
+                "background": true,
                 "commands": [
                     {
                         "permission": "normal",
@@ -87,6 +88,7 @@
             "button-1": {
                 "name": "运行",
                 "describe": "打开一个新的资源管理器",
+                "background": true,
                 "commands": [
                     {
                         "permission": "normal",
@@ -138,6 +140,7 @@
             "button-1": {
                 "name": "启动",
                 "describe": "启动水印",
+                "background": true,
                 "commands": [
                     {
                         "permission": "normal",
